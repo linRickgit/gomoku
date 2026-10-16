@@ -1,18 +1,17 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# 前端
+node_modules/
+gomoku-web/dist/
 
-# Other files and folders
-.settings/
+# 后端
+gomoku-server/target/
+!gomoku-server/src/main/resources/static/
+*.log
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# 测试构建产物
+tools/.tmp/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+*.iml

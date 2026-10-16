@@ -1,0 +1,23 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: gomoku-server
+  jackson:
+    default-property-inclusion: non_null
+
+gomoku:
+  room:
+    # 双方都掉线后，棋盘保留多久再销毁。
+    # 这段时间内玩家可以用房间码回来接着下；超时后房间消失，再进入会提示不存在。
+    abandoned-timeout-minutes: 10
+    # 玩家掉线后座位的独占保护期（秒）。这段时间内别人输房间码进来只能观战，
+    # 防止网络抖动一断线座位就被路人抢走。本人凭凭证回来不受影响，可立即坐回原位。
+    seat-reserve-seconds: 5
+  # 巡检任务执行间隔
+  sweep-interval-millis: 60000
+
+logging:
+  level:
+    com.example.gomoku: INFO
