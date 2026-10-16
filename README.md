@@ -1,5 +1,7 @@
 # 五子棋（Gomoku）
 
+通过 WorkBuddy 生成的五子棋游戏
+
 15×15 无禁手自由局，支持**人机对弈**与**联机玩家对弈**。后端无数据库，房间状态全部驻留内存。
 
 ## 技术栈
@@ -8,6 +10,11 @@
 |---|---|
 | 前端 | Vue 3 + TypeScript + Vite 8，Canvas 绘制棋盘，AI 跑在 Web Worker |
 | 后端 | Java 21 + Spring Boot 4.1.1，原生 WebSocket，无数据库 |
+
+## 效果图
+![img.png](image/1.png) ![img.png](image/2.png) ![img.png](image/3.png)
+![img.png](image/4.png) ![img.png](image/5.png) ![img.png](image/6.png)  ![img.png](image/7.png)
+
 
 ## 目录结构
 
